@@ -3,45 +3,47 @@ import "./ExpenseForm.scss";
 
 const ExpenseForm = () => {
   // storing the input values in state that we can use them to submit the form
-  // individual approach
 
-  // const [title, setTitle] = useState("");
-  // const [amount, setAmount] = useState("");
-  // const [date, setDate] = useState("");
+  // ? individual approach
+  const [title, setTitle] = useState("");
+  const [amount, setAmount] = useState("");
+  const [date, setDate] = useState("");
 
-  // all in one approach
-  const [userInputs, setUserInputs] = useState({
-    title: "",
-    amount: "",
-    date: "",
-  });
+  // ? all in one approach
+  // const [userInputs, setUserInputs] = useState({
+  //   title: "",
+  //   amount: "",
+  //   date: "",
+  // });
 
   const titleHandler = (event) => {
-    // setTitle(event.target.value);
+    setTitle(event.target.value);
 
-    setUserInputs({
-      ...userInputs,
-      title: event.target.value,
-    });
+    // setUserInputs({
+    //   ...userInputs,
+    //   title: event.target.value,
+    // });
   };
-
-  console.log(userInputs);
 
   const amountHandler = (event) => {
-    // setAmount(event.target.value);
+    setAmount(event.target.value);
 
-    setUserInputs({
-      ...userInputs,
-      amount: event.target.value,
-    });
+    // setUserInputs({
+    //   ...userInputs,
+    //   amount: event.target.value,
+    // });
+    // use this call back function if state update DEPENDS of previous State
+    //  setUserInputs((preState) => {
+    //   return { ...preState, amount: event.target.value };
+    // });
   };
   const dateHandler = (event) => {
-    // setDate(event.target.value);
+    setDate(event.target.value);
 
-    setUserInputs({
-      ...userInputs,
-      date: event.target.value,
-    });
+    // setUserInputs({
+    //   ...userInputs,
+    //   date: event.target.value,
+    // });
   };
 
   return (
