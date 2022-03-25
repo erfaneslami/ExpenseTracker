@@ -1,6 +1,7 @@
 import "./App.scss";
 
 import Expenses from "./components/Expenses/Expenses";
+import NewExpense from "./components/NewExpense/newExpense";
 
 function App() {
   const Expense = [
@@ -18,7 +19,12 @@ function App() {
     },
   ];
 
-  return <Expenses expenses={Expense}></Expenses>;
+  return (
+    <>
+      <NewExpense />
+      <Expenses expenses={Expense}></Expenses>;
+    </>
+  );
 }
 
 export default App;
