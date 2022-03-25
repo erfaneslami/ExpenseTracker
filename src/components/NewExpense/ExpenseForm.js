@@ -2,7 +2,7 @@ import "./ExpenseForm.scss";
 
 const ExpenseForm = () => {
   return (
-    <form>
+    <form className="new-expense">
       <div className="new-expense__controls">
         <div className="new-expense__control">
           <label>Title</label>
