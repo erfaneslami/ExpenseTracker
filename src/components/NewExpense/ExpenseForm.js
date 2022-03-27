@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./ExpenseForm.scss";
 
-const ExpenseForm = () => {
+const ExpenseForm = (props) => {
   // storing the input values in state that we can use them to submit the form
 
   // ? individual approach
@@ -48,13 +48,13 @@ const ExpenseForm = () => {
 
   const submitHandler = (event) => {
     event.preventDefault();
-    const userData = {
+    const expenseData = {
       title: enteredTitle,
       amount: enteredAmount,
       date: new Date(enteredDate),
     };
 
-    console.log(userData);
+    props.onSaveExpenseData(expenseData);
 
     setTitle("");
     setAmount("");
