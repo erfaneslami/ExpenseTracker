@@ -1,4 +1,3 @@
-import Card from "../Ui/Card";
 import ExpenseDate from "./ExpenseDate/ExpenseDate";
 import "./ExpenseItem.scss";
 
