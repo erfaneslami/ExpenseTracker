@@ -8,13 +8,13 @@ const dummyExpenses = [
   {
     id: "e1",
     title: "MacBook pro 14inch",
-    amount: "800.00",
+    amount: 800.0,
     date: new Date(2022, 5, 10),
   },
   {
     id: "e2",
     title: "Apple Keyboard 2",
-    amount: "50.00",
+    amount: 50.0,
     date: new Date(2022, 5, 10),
   },
 ];
